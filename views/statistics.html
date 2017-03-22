@@ -1,0 +1,19 @@
+<title>Statistics</title>
+<table class="table">
+	<thead>
+    	<tr>
+    		<th>URL</th>
+    		<th>Title</th>
+    		<th>Status</th>
+    		<th>Date</th>
+    	</tr>
+  </thead>
+  <tbody id="results">
+  <?php
+  		foreach($data as $row)
+  		{
+  			echo('<tr><td><a href="/info/statistics/'.$row['id'].'">'.$row['url'].'</td></a><td>'.$row['title'].'</td><td>'.$row['status'].'</td><td>'.$row['created_at'].'</td></tr>');
+  		}
+  ?>
+  </tbody>
+</table>
